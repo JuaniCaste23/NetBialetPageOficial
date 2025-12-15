@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO básico -->
+  <meta name="description" content="NetBialet brinda soluciones en internet, seguridad y servicios informáticos para empresas y hogares.">
+  <meta name="keywords" content="internet, Bialet Masse, seguridad informática, servicios IT, NetBialet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans text-gray-800 scroll-smooth">
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed top-0 w-full shadow z-50 bg-cover bg-center"
+        style="background-image: url('assets/fonts/fondo-telarania.svg');">
+  <div class="absolute inset-0 bg-white/90"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <img src="assets/icons/logo-netbialet.svg" alt="NetBialet" class="h-10">
+
+    <!-- Desktop nav -->
+    <nav class="hidden md:flex gap-8 font-medium text-[#0a2540]">
+      <a href="#servicios" class="hover:text-blue-600 transition">Servicios</a>
+      <a href="#clientes" class="hover:text-blue-600 transition">Clientes</a>
+      <a href="#cobertura" class="hover:text-blue-600 transition">Cobertura</a>
+    </nav>
+
+    <!-- Mobile button -->
+    <button id="menuBtn" class="md:hidden text-[#0a2540]">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div id="mobileMenu"
+     class="fixed inset-0 bg-white z-40 hidden flex-col items-center justify-center gap-8 text-xl font-semibold text-[#0a2540]">
+  <a href="#servicios">Servicios</a>
+  <a href="#clientes">Clientes</a>
+  <a href="#cobertura">Cobertura</a>
+  <a href="https://wa.me/5493541277864"
+     class="bg-[#0a2540] text-white px-6 py-3 rounded-xl">WhatsApp</a>
+</div>
+
+<!-- ================= HERO ================= -->
+<section id="hero"
+  class="pt-32 min-h-screen flex items-center bg-cover bg-center relative"
+  style="background-image: url('assets/img/fondo-netbialet.png');">
+
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <div class="relative max-w-4xl mx-auto px-6 text-center text-white">
+    <img src="assets/icons/logo-netbialet.svg"
+         alt="NetBialet"
+         class="mx-auto mb-8 max-w-xs drop-shadow-2xl">
+
+    <h1 class="text-4xl md:text-5xl font-bold text-white">
+      Soluciones tecnológicas confiables
+    </h1>
+
+    <p class="mt-6 text-lg opacity-90">
+      Internet, seguridad y servicios informáticos para empresas y hogares
+    </p>
+
+    <a href="https://wa.me/5493541277864"
+       class="inline-block mt-10 bg-[#0a2540] hover:bg-blue-900
+              px-8 py-4 rounded-xl font-semibold transition">
+      Contactanos por WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- ================= SERVICIOS ================= -->
+<section id="servicios" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-[#0a2540]">
+      Nuestros Servicios
+    </h2>
+
+    <div class="mt-16 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+
+      <!-- Card -->
+      <div class="relative rounded-2xl overflow-hidden shadow-lg group
+                  transition transform hover:-translate-y-2 hover:shadow-2xl
+                  reveal opacity-0 translate-y-10">
+        <img src="assets/img/flayer-internet.jpg" class="h-56 w-full object-cover">
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100
+                    transition flex items-center justify-center">
+          <span class="text-white text-lg font-semibold">Internet & Conectividad</span>
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden shadow-lg group
+                  transition transform hover:-translate-y-2 hover:shadow-2xl
+                  reveal opacity-0 translate-y-10">
+        <img src="assets/img/flayer-seguridad.jpg" class="h-56 w-full object-cover">
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100
+                    transition flex items-center justify-center">
+          <span class="text-white text-lg font-semibold">Seguridad Informática</span>
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden shadow-lg group
+                  transition transform hover:-translate-y-2 hover:shadow-2xl
+                  reveal opacity-0 translate-y-10">
+        <img src="assets/img/flayer-servicios-informaticos.jpg" class="h-56 w-full object-cover">
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100
+                    transition flex items-center justify-center">
+          <span class="text-white text-lg font-semibold">Servicios IT</span>
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden shadow-lg group
+                  transition transform hover:-translate-y-2 hover:shadow-2xl
+                  reveal opacity-0 translate-y-10">
+        <img src="assets/img/flayer-insumos.jpg" class="h-56 w-full object-cover">
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100
+                    transition flex items-center justify-center">
+          <span class="text-white text-lg font-semibold">Insumos Tecnológicos</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="py-20 bg-[#0a2540] text-white text-center">
+  <h2 class="text-3xl md:text-4xl font-bold">
+    ¿Necesitás una solución tecnológica confiable?
+  </h2>
+  <p class="mt-4 text-lg opacity-90">
+    Contactanos y armamos una propuesta a medida
+  </p>
+
+  <a href="https://wa.me/5493541277864"
+     class="inline-block mt-8 bg-green-500 hover:bg-green-600
+            px-8 py-4 rounded-xl font-semibold transition">
+    Hablá con un asesor
+  </a>
+</section>
+
+<!-- ================= CLIENTES ================= -->
+<section id="clientes"
+  class="py-20 bg-cover bg-center relative"
+  style="background-image: url('assets/fonts/fondo-telarania.svg');">
+
+  <div class="absolute inset-0 bg-white/90"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#0a2540]">
+      Clientes que confían en nosotros
+    </h2>
+
+    <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10
+                text-gray-600 font-semibold">
+      <span>Empresas</span>
+      <span>Comercios</span>
+      <span>PyMES</span>
+      <span>Instituciones</span>
+      <span>Hogares</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COBERTURA ================= -->
+<section id="cobertura" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#0a2540]">
+      Zona de Cobertura
+    </h2>
+
+    <div class="mt-12 aspect-video rounded-2xl overflow-hidden shadow-lg">
+      <!-- PEGAR AQUÍ EL IFRAME REAL DE GOOGLE MAPS -->
+      <iframe src="https://www.google.com/maps/d/embed?mid=1akTmu1cSxz7lk__zgXSgKMSRsuUzQew&ehbc=2E312F" class="w-full h-full" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-[#0a2540] text-white py-14 text-center">
+  <img src="assets/icons/logo-netbialet.svg" class="h-12 mx-auto mb-6 opacity-90">
+
+  <p class="text-lg font-medium">
+    Soluciones tecnológicas para un mundo conectado
+  </p>
+
+  <p class="mt-6 text-sm opacity-60">
+    © 2025 NetBialet · Todos los derechos reservados
+  </p>
+</footer>
+
+<!-- ================= WHATSAPP ================= -->
+<a href="https://wa.me/5493541277864"
+   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600
+          p-4 rounded-full shadow-xl transition hover:scale-110
+          z-50 flex items-center justify-center">
+  <img src="icons/whatsapp.svg" alt="WhatsApp" class="h-7 w-7">
+</a>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="script.js"></script>
+
+</body>
+</html>
